@@ -37,7 +37,7 @@ header {
     border-bottom: 2px solid var(--accent);
 }
 
-header .logo img { height: 40px; }
+header .logo img { height: 60px; }
 header .logo { display:flex; align-items:center; }
 
 /* Navigation */
