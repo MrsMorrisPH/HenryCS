@@ -1,112 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    Henry High Computer Science Pathway
-    Single-page site with sections for Pathway, Courses, Clubs, and Enrichment.
-
-    HOW TO EDIT:
-    - Update school/teacher-specific text between the placeholders [like this].
-    - Replace the placeholder logo src below with your real logo when ready.
-    - Course & Club info: look for [Add later] and replace.
-    - Colors/typography are controlled in styles.css (linked below).
-
-    DEPLOY:
-    - Place index.html and styles.css at the repo root (e.g., henry-high-cs-site).
-    - Enable GitHub Pages in Repo Settings > Pages > Source: main / root.
-  -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Henry High Computer Science Pathway Courses, Clubs, and Enrichment Opportunities" />
-  <title>Henry High Computer Science</title>
-
-  <!-- Google Font: Inter (modern, readable) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- main stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Henry High Computer Science Pathway — Courses, Clubs, and Enrichment Opportunities" />
-  <title>Henry High Computer Science</title>
+  <title>Computer Science at Henry</title>
 
   <!-- Google Font: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
+
 <body>
+
+  <!-- Header -->
   <header>
+    <!-- Logo Image -->
     <div class="logo" role="img" aria-label="Henry High logo">
       <img src="henryCS.jpg" alt="Henry CS Logo" width="120">
     </div>
 
+    <!-- Navigation Links -->
     <nav aria-label="Primary">
       <ul>
-        <li><a href="#pathway">Pathway</a></li>
+        <li><a href="#pathway">About</a></li>
         <li><a href="#courses">Courses</a></li>
         <li><a href="#clubs">Clubs</a></li>
         <li><a href="#enrichment">Enrichment</a></li>
+        <li><a href="#teacher">Meet the Teacher</a></li>
       </ul>
     </nav>
 
     <div class="header-actions" aria-hidden="true"></div>
   </header>
 
+  <!-- Page Content -->
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">[UNDER CONSTRUCTION] Welcome to Henry High’s Computer Science Pathway</h2>
-      <p>Explore our four-course pathway, join our clubs, and take part in enrichment opportunities like field trips and hackathons.</p>
+      <h2 id="hero-title">[UNDER CONSTRUCTION] Computer Science at Henry</h2>
+      <p>Code. Create. Innovate. Your future in tech starts here.</p>
     </section>
 
+    <!-- About the Pathway -->
     <section id="pathway" class="section" aria-labelledby="pathway-title">
-      <h2 id="pathway-title">Course Pathway</h2>
-      <p>Recommended sequence: <strong>Computer Science Discoveries</strong> → <strong>AP CSP</strong> → <strong>AP CSA</strong> → <strong>CS 3/4</strong></p>
+      <h2 id="pathway-title">About the Pathway</h2>
+    <p><strong>Information and Communication Technology: Software and Systems Development</strong></p>
+<p>Build the skills to shape the future! Our pathway introduces students to problem-solving, design thinking, and the foundations of computer science.
+Explore exciting fields like web development, user experience, networking, data analysis, and software engineering.
+Along the way, earn college credit through AP courses and dual enrollment, gain industry-recognized certifications,
+and work on real projects with mentors. From hands-on learning to career-ready experiences, this pathway opens doors
+to a variety of careers and college success. </p>
     </section>
 
+    <!-- Courses -->
     <section id="courses" class="section" aria-labelledby="courses-title">
       <h2 id="courses-title">Courses</h2>
       <div class="card-container">
+
+        <!-- CS Discoveries -->
         <article class="card">
           <h3>Computer Science Discoveries</h3>
-          <p><strong>Description:</strong> [Add later]</p>
+          <p>Begin your journey—no experience needed! Students learn coding fundamentals,
+            problem-solving, and design thinking while creating websites, games, and apps.
+            They’ll also explore basics of data science and AI, building confidence for advanced courses.</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+              <li>Hands-on projects</li>
+              <li>Collaboration and teamwork</li>
+              <li>Beginner-friendly</li>
+            </ul>
         </article>
+        <!-- AP Computer Science Principles -->
         <article class="card">
           <h3>AP Computer Science Principles</h3>
-          <p><strong>Description:</strong> [Add later]</p>
+          <p>Expand your skills with topics like networking, cybersecurity, data science, and software development.
+            Students code in Python, work on real-world projects with mentors, and can earn AP and community college credit.</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+              <li>Real-world projects</li>
+              <li>Mentorship opportunities</li>
+              <li>College credit options</li>
         </article>
+      <!-- AP Computer Science A -->
         <article class="card">
           <h3>AP Computer Science A</h3>
-          <p><strong>Description:</strong> [Add later]</p>
+          <p>Master object-oriented programming in Java and collaborate on software projects.
+            Students learn GitHub, build a professional portfolio, and can earn a Java certification and
+            AP credit—gaining career-ready skills.</p>
+            
+            <p><strong>Highlights:</strong></p>
+            <ul>
+              <li>Java programming</li>
+              <li>Version control with GitHub</li>
+              <li>Professional portfolio development</li>
+            </ul>
         </article>
+        <!-- CS 3/4 -->
         <article class="card">
           <h3>CS 3/4</h3>
-          <p><strong>Description:</strong> [Add later]</p>
+          <p>Specialize and stand out! Students earn multiple industry certifications and
+            complete major projects in areas like AI, web development, or cybersecurity.
+            They graduate with a polished portfolio and credentials for college or entry-level tech careers.</p>
+            
+            <p><strong>Highlights:</strong></p>
+            <ul>
+              <li>Industry certifications</li>
+              <li>Project based</li>
+              <li>Career readiness</li>
+            </ul>
         </article>
       </div>
     </section>
 
+    <!-- Clubs -->
     <section id="clubs" class="section" aria-labelledby="clubs-title">
       <h2 id="clubs-title">Clubs</h2>
       <ul>
-        <li><strong>Girls Who Code</strong> — Meets [Day/Time] — <a href="#">Instagram</a></li>
-        <li><strong>AI Club</strong> — Meets [Day/Time] — <a href="#">Instagram</a></li>
-        <li><strong>CS Club</strong> — Meets [Day/Time] — <a href="#">Instagram</a></li>
+        <li>
+          <strong>Girls Who Code</strong> — Meets Thursdays in rm 406 —
+          <a class="social-link" href="https://www.instagram.com/phhs.girlswhocodeclub?igsh=NnBlam13YWR6Nmk4" target="_blank" rel="noopener noreferrer">
+            <!-- Inline Instagram SVG icon -->
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3.5A4.5 4.5 0 1 0 16.5 12 4.505 4.505 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 14.5 12 2.503 2.503 0 0 1 12 9.5zM18.5 6a.75.75 0 1 1-.75-.75.75.75 0 0 1 .75.75z"/>
+            </svg>
+            @phhs.girlswhocodeclub
+          </a>
+        </li>
+        <li>
+          <strong>AI Club</strong> — Meets Fridays in rm 507 —
+          <a class="social-link" href="https://www.instagram.com/henryaiclub?igsh=YjIzYmQ0M3RodmMz" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3.5A4.5 4.5 0 1 0 16.5 12 4.505 4.505 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 14.5 12 2.503 2.503 0 0 1 12 9.5zM18.5 6a.75.75 0 1 1-.75-.75.75.75 0 0 1 .75.75z"/>
+            </svg>
+            @henryai
+          </a>
+        </li>
+        <li>
+          <strong>CS Club</strong> — Meets Tuesdays in rm 406 —
+          <a class="social-link" href="https://www.instagram.com/phhs.cs.club?igsh=MTlmbXBkZW42enlrdA==" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3.5A4.5 4.5 0 1 0 16.5 12 4.505 4.505 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 14.5 12 2.503 2.503 0 0 1 12 9.5zM18.5 6a.75.75 0 1 1-.75-.75.75.75 0 0 1 .75.75z"/>
+            </svg>
+            @cs_club
+          </a>
+        </li>
       </ul>
     </section>
 
+    <!-- Enrichment Opportunities -->
     <section id="enrichment" class="section" aria-labelledby="enrichment-title">
       <h2 id="enrichment-title">Enrichment Opportunities</h2>
-      <p>[Add details later about field trips, guest speakers, hackathons, competitions, and other enrichment.]</p>
+      <h3>Japan STEM Tour – Summer 2026</h3>
+      <p></p>Join us for an unforgettable STEM adventure in Japan! 
+      Explore Tokyo, experience cutting-edge technology, and immerse yourself 
+      in Japanese culture. Highlights include visiting the Japan Aerospace Exploration 
+      Agency, participating in a traditional tea ceremony, and more.</p>
+      <p>📅 Dates: June 16–24, 2026</p>
+      <p>💲 Cost: $5,319 (age 19 and under), $6,049 (adults) – all-inclusive</p>
+      <p>📄 View <a href="https://cdn.brandfolder.io/RV7K8308/at/wfnw7k4hrwp4nkjnxv6bqnb/STJ_2026.pdf">Full Itinerary</a></p>
+      <p>📢 <a href="https://bit.ly/3VOwZcX">Informational Meeting 11/19</a></p>
+      <p>👉 <a href="http://www.eftours.com/2934903BJ">Enroll & Trip Details</a></p>
+      
+      <br>
+
+      <h3>Wealth Reimagined</h3>
+      <p>Learn more about this cross-curricular project</p>
+      <p><a href="https://sites.google.com/sandi.net/wealth-reimagined-phhs-2025-26?usp=sharing">Wealth Reimagined Website</a></p>
     </section>
+
+    <!-- Meet the Teacher -->
+    <section id="teacher" class="section" aria-labelledby="teacher-title">
+      <h2 id="teacher-title">Meet Mrs. Morris</h2>
+    <p>15 years in education. Henry alumna c/o '08. Cares about students</p>
+    <!-- video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sw0pLftEIDc?si=81NVq8xLBfFkVjN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
   </main>
 
- 
-
   
-
+  <!-- /Footer -->
     <footer>
       <p>© Kim Morris 2025 • Contact: kmorris3@sandi.net</p>
     </footer>

@@ -57,6 +57,21 @@ nav a:focus {
     background-color: rgba(0,0,0,0.04);
 }
 
+/* Social link (icon + handle) */
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text);
+    text-decoration: none;
+}
+.social-link svg {
+    display: inline-block;
+    vertical-align: middle;
+    color: #c13584; /* instagram-like accent */
+}
+.social-link:hover { text-decoration: underline; }
+
 /* Main content should expand to fill available space between header and footer */
 main {
     /* ensure main fills the space between header and footer when content is small,
